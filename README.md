@@ -28,11 +28,8 @@ localhost:8080/ to the internal service
 
 ```bash
 kubectl apply -f k8s
-# Open app at localhost:8080 or at $NODE_IP.
-
-# Get the NODE_IP under INTERNAL-IP tab with command:
-kubectl get nodes -o wide
-
+# Open app at localhost:8080 or directly at ingress ip.
+kubectl get ingress
 ```
 
-![Nodeip](./nodeip.png)
+![IpAddress](./ipaddr.png)
