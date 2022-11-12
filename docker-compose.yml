@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  simplesvelte:
+    image: simplesvelte
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 80:80

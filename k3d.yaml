@@ -1,0 +1,11 @@
+apiVersion: k3d.io/v1alpha4
+kind: Simple
+ports:
+  - port: 8080:80 # same as `--port '8080:80@loadbalancer'`
+    nodeFilters:
+      - loadbalancer
+registries:
+  create:
+    name: k3d-myreg.localhost
+    hostPort: "12345"
+   
